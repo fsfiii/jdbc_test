@@ -1,0 +1,14 @@
+jdbc perf test between jruby and java
+
+Quick small JDBC performance test between jruby and java using the same
+code where possible.  Initial profiling work I've done seems to indicate
+that the jruby bottleneck is almost exclusively in the get_string calls.
+
+java seems to consistently process records between 2x-4x faster
+
+$ ./run_jruby 
+1000000 rows processed in 9 seconds (111111.11 recs/s)
+
+$ ./run_java 
+1000000 rows processed in 3 seconds (333333.0 recs/s)
+
