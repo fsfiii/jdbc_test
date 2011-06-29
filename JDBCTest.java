@@ -9,7 +9,7 @@ public class JDBCTest {
     String db_url  = "jdbc:postgresql://localhost/fsfiii";
     String db_user = "reader";
     String db_pass = "r32der";
-    String sql = "select * from test_big_table limit 1000000";
+    String sql = "select * from test_big_table limit 2000000";
     
     Class.forName("org.postgresql.Driver");
     

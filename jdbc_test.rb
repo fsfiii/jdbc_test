@@ -6,7 +6,7 @@ require 'java'
 db_url  = 'jdbc:postgresql://localhost/fsfiii'
 db_user = 'reader'
 db_pass = 'r32der'
-sql = 'select * from test_big_table limit 1000000'
+sql = 'select * from test_big_table limit 2000000'
 
 Java::org.postgresql.Driver
 

@@ -3,4 +3,32 @@
 export PATH=/usr/local/jruby-1.6.2/bin:$PATH
 export CLASSPATH=$HOME/lib/jars/postgresql-9.0-801.jdbc4.jar
 
+
+export JAVA_HOME=/staging/tmp/jdk1.7.0
+export PATH=$JAVA_HOME/bin:/staging/tmp/jruby/bin:$PATH
+jruby --version
+echo jruby  --server -Xcompile.invokedynamic=true jdbc_test.rb
+jruby  --server -Xcompile.invokedynamic=true jdbc_test.rb
+
+echo
+echo
+
+jruby --version
+echo jruby --fast --server jdbc_test.rb
+jruby --fast --server jdbc_test.rb
+
+echo
+echo
+export PATH=/usr/local/jruby-1.6.2/bin:$PATH
+jruby --version
+echo jruby --fast --server jdbc_test.rb
+jruby --fast --server jdbc_test.rb
+
+echo
+echo
+
+export JAVA_HOME=/usr/java/default
+export PATH=$JAVA_HOME/bin:$PATH
+jruby --version
+echo jruby --fast --server jdbc_test.rb
 jruby --fast --server jdbc_test.rb
