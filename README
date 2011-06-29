@@ -10,5 +10,5 @@ $ ./run_jruby
 1000000 rows processed in 9 seconds (111111.11 recs/s)
 
 $ ./run_java 
-1000000 rows processed in 3 seconds (333333.0 recs/s)
+1000000 rows processed in 3.889 seconds (257135.52 recs/s)
 

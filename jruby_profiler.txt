@@ -1,0 +1,58 @@
+Profiling enabled; ^C shutdown will now dump profile info
+2000000 rows processed in 27 seconds (72038.32 recs/s)
+
+main thread profile results:
+Total time: 24.32
+
+     total        self    children       calls  method
+----------------------------------------------------------------
+     16.90        4.96       11.94    16000000  Java::OrgPostgresqlJdbc4::Jdbc4ResultSet#getString
+      6.58        6.58        0.00     2000001  Java::OrgPostgresqlJdbc4::Jdbc4ResultSet#next
+      0.43        0.01        0.43          15  Kernel#require
+      0.11        0.00        0.11           2  #<Class:0x171aaff0f>#executeQuery
+      0.09        0.00        0.09           2  Java::JavaSql::DriverManager.getConnection
+      0.08        0.00        0.08           2  Java::OrgPostgresqlJdbc4::Jdbc4Connection#createStatement
+      0.08        0.07        0.01          16  JavaUtilities#get_proxy_or_package_under_package
+      0.08        0.01        0.07          53  Object.method_added
+      0.07        0.00        0.07         111  Object.method_added
+      0.05        0.02        0.03           2  Array#each
+      0.04        0.04        0.00           2  Time.now
+      0.03        0.00        0.03           1  Java::OrgPostgresql.method_missing
+      0.03        0.00        0.03           6  Java::Java.method_missing
+      0.03        0.02        0.00           1  Kernel#trap
+      0.03        0.03        0.00          53  Module#initialize_copy
+      0.01        0.00        0.01           2  Java::OrgPostgresqlJdbc2::AbstractJdbc2ResultSet#getMetaData
+      0.01        0.01        0.00          62  Module#undef_method
+      0.01        0.01        0.00         150  String#=~
+      0.01        0.01        0.00           5  Module#module_eval
+      0.00        0.00        0.00           1  Java::OrgJrubyLexerYacc.method_missing
+      0.00        0.00        0.00          49  Module#alias_method
+      0.00        0.00        0.00           2  Java::Org.method_missing
+      0.00        0.00        0.00           2  Java::OrgJruby.method_missing
+      0.00        0.00        0.00          20  JavaUtilities#get_package_module_dot_format
+      0.00        0.00        0.00           1  Module#instance_methods
+      0.00        0.00        0.00          10  JavaPackageModuleTemplate.__block__
+      0.00        0.00        0.00          17  Kernel#java
+      0.00        0.00        0.00           1  Java::JavaSql.method_missing
+      0.00        0.00        0.00           6  Module#private
+      0.00        0.00        0.00           7  Module#include
+      0.00        0.00        0.00           1  Java::JavaUtil.method_missing
+      0.00        0.00        0.00           2  JavaInterfaceTemplate.append_features
+      0.00        0.00        0.00           1  Java::JavaNio.method_missing
+      0.00        0.00        0.00           3  Kernel#org
+      0.00        0.00        0.00           1  JavaUtilities#get_package_module
+      0.00        0.00        0.00           1  Object#__jtrap
+      0.00        0.00        0.00         169  Class#inherited
+      0.00        0.00        0.00           4  Kernel.method_added
+      0.00        0.00        0.00          48  Module#method_defined?
+      0.00        0.00        0.00           1  Signal#__jtrap_kernel
+      0.00        0.00        0.00           8  Kernel#send
+      0.00        0.00        0.00           1  Java.method_missing
+      0.00        0.00        0.00           2  Module#attr_accessor
+      0.00        0.00        0.00           7  JavaProxy.inherited
+      0.00        0.00        0.00           1  Java::OrgJrubyLexer.method_missing
+      0.00        0.00        0.00           1  JavaUtilities#get_top_level_proxy_or_package
+      0.00        0.00        0.00           2  Fixnum#to_s
+      0.00        0.00        0.00          50  Kernel#method
+      0.00        0.00        0.00           2  IO#puts
+      0.00        0.00        0.00          50  Module#instance_method
