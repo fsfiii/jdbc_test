@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export PATH=/usr/local/jruby-1.6.2/bin:$PATH
+export CLASSPATH=$HOME/lib/jars/postgresql-9.0-801.jdbc4.jar
+
+jruby --fast --server jdbc_test.rb
