@@ -33,7 +33,7 @@ public class JDBCTest {
     }
     
     Calendar end_cal = Calendar.getInstance();
-    long elapsed = end_cal.getTimeInMillis() - begin_cal.getTimeInMillis();
+    float elapsed = end_cal.getTimeInMillis() - begin_cal.getTimeInMillis();
     if (elapsed <= 0) {
       elapsed = 1;
     }
