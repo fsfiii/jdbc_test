@@ -29,12 +29,7 @@
          (- (. (Calendar/getInstance) getTimeInMillis) begin_ts) 1000.0
        ))
        " recs/s)"
-       ) ; end str
-       )) ; end let and println
-      )
-    )
-  )
-)
+       )))))))
 
 ;      (dorun (map #(println (str
 ;                            (:product_id %)  "^A"
