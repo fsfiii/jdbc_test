@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export CLASSPATH=$HOME/clojure/clojure.jar:$HOME/clojure/clojure-contrib-1.2.0.jar:$HOME/lib/jars/postgresql-9.0-801.jdbc4.jar:$CLASSPATH
+export JAVA_HOME=/usr/java/default
+export PATH=$JAVA_HOME/bin:$PATH
+
+java -server -cp $CLASSPATH:$HOME/clojure/clojure.jar clojure.main jdbc_test.clj
+

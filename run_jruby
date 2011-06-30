@@ -8,7 +8,7 @@ export JAVA_HOME=/staging/tmp/jdk1.7.0
 export PATH=$JAVA_HOME/bin:/staging/tmp/jruby/bin:$PATH
 jruby --version
 echo jruby  --server -Xcompile.invokedynamic=true jdbc_test.rb
-jruby  --server -Xcompile.invokedynamic=true jdbc_test.rb
+jruby --server -Xcompile.invokedynamic=true jdbc_test.rb
 
 echo
 echo
