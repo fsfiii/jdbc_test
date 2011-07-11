@@ -1,32 +1,28 @@
-$ ./run_java 
+$ ./run_java ; ./run_java
 2000000 rows processed in 7.18 seconds (278551.53 recs/s)
-
-$ ./run_java 
 2000000 rows processed in 8.226 seconds (243131.55 recs/s)
 
 $ ./run_jruby 
-jruby 1.6.3 (ruby-1.9.2-p136) (2011-07-07 965162f) (Java HotSpot(TM) 64-Bit Server VM 1.7.0) [linux-amd64-java]
+jruby 1.7.0.dev (ruby-1.9.2-p136) (2011-07-11 fffffff) (Java HotSpot(TM) 64-Bit Server VM 1.7.0) [linux-amd64-java]
 jruby --fast --server -Xji.objectProxyCache=false jdbc_test.rb
-2000000 rows processed in 15 seconds (132476.65 recs/s)
+2000000 rows processed in 10 seconds (195102.92 recs/s)
 
 
-jruby 1.6.3 (ruby-1.9.2-p136) (2011-07-07 965162f) (Java HotSpot(TM) 64-Bit Server VM 1.7.0) [linux-amd64-java]
+jruby 1.7.0.dev (ruby-1.9.2-p136) (2011-07-11 fffffff) (Java HotSpot(TM) 64-Bit Server VM 1.7.0) [linux-amd64-java]
 jruby --server -Xcompile.invokedynamic=true jdbc_test.rb
-2000000 rows processed in 16 seconds (124471.00 recs/s)
+2000000 rows processed in 10 seconds (194798.87 recs/s)
 
 
-jruby 1.6.3 (ruby-1.9.2-p136) (2011-07-07 965162f) (Java HotSpot(TM) 64-Bit Server VM 1.7.0) [linux-amd64-java]
+jruby 1.7.0.dev (ruby-1.9.2-p136) (2011-07-11 fffffff) (Java HotSpot(TM) 64-Bit Server VM 1.7.0) [linux-amd64-java]
 jruby --fast --server jdbc_test.rb
-2000000 rows processed in 15 seconds (128213.35 recs/s)
+2000000 rows processed in 10 seconds (189322.23 recs/s)
 
 
 jruby 1.6.3 (ruby-1.9.2-p136) (2011-07-07 965162f) (Java HotSpot(TM) 64-Bit Server VM 1.6.0_21) [linux-amd64-java]
 jruby --fast --server jdbc_test.rb
-2000000 rows processed in 15 seconds (125054.71 recs/s)
+2000000 rows processed in 17 seconds (112315.38 recs/s)
 
-$ ./run_clojure 
+$ ./run_clojure ; ./run_clojure
 2000000 rows processed in 16.284 seconds (122819.94595922378 recs/s)
-
-$ ./run_clojure 
 2000000 rows processed in 15.744 seconds (127032.52032520325 recs/s)
 

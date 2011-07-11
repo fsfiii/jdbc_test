@@ -6,6 +6,8 @@ export CLASSPATH=$HOME/lib/jars/postgresql-9.0-801.jdbc4.jar
 export JAVA_HOME=/staging/tmp/jdk1.7.0
 export PATH=$JAVA_HOME/bin:$PATH
 
+export PATH=/staging/tmp/jruby/bin:$PATH
+
 jruby --version
 echo jruby --fast --server -Xji.objectProxyCache=false jdbc_test.rb
 jruby --fast --server -Xji.objectProxyCache=false jdbc_test.rb
@@ -29,7 +31,9 @@ echo
 
 export JAVA_HOME=/usr/java/default
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH=/usr/local/jruby/bin:$PATH
 
 jruby --version
 echo jruby --fast --server jdbc_test.rb
 jruby --fast --server jdbc_test.rb
+
